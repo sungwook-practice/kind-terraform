@@ -32,6 +32,21 @@ resource "kind_cluster" "default" {
         container_port = 30443
         host_port      = 30443
       }
+      # harbor http
+      extra_port_mappings {
+        container_port = 30002
+        host_port      = 30002
+      }
+      # harbor https
+      extra_port_mappings {
+        container_port = 30003
+        host_port      = 30003
+      }
+      # harbor notary
+      extra_port_mappings {
+        container_port = 30004
+        host_port      = 30004
+      }
     }
 
     node {
