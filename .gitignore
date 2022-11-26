@@ -40,3 +40,6 @@ terraform.rc
 .pluralith/
 pluralith.yml
 comment.md
+
+# kind
+cluster-1-config
